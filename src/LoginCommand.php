@@ -363,7 +363,7 @@ class LoginCommand
      *
      * @return string URL
      */
-    private function makeMagicUrl(WP_User $user, $expires)
+    public function makeMagicUrl(WP_User $user, $expires)
     {
         static::debug("Generating a new magic login for User $user->ID expiring in {$expires} seconds.");
 
